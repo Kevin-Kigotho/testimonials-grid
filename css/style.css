@@ -17,7 +17,8 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "card1 card1 card2 card5" "card3 card4 card4 card5";
+  grid-template-areas: "card1 card1 card2 card5"
+ "card3 card4 card4 card5";
   gap: 2rem; }
 
 .card {
@@ -89,7 +90,12 @@ blockquote {
 @media (max-width: 768px) {
   .wrapper .testimonials {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; } 
+  .card__profile {
+        position: relative;
+        z-index: 30;
+    }
+}
 
 .attribution {
   font-size: 11px;
