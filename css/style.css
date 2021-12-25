@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #ecf2f8; }
+
+img {
+  width: 100%; }
+
+.testimonials {
+  max-width: 80%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "card1 card1 card2 card5" "card3 card4 card4 card5";
+  gap: 2rem; }
+
+.card {
+  padding: 2rem;
+  border-radius: 10px; }
+
+.card .card__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.card__profile .profile-img {
+  margin-right: 1rem;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%; }
+
+.card p {
+  color: #cfcfcf;
+  z-index: 10; }
+
+blockquote {
+  margin-top: 1rem; }
+
+.card1 {
+  grid-area: card1;
+  background-color: #7541c8;
+  color: white;
+  position: relative;
+  z-index: -10; }
+
+.card1 h3 {
+  position: relative;
+  z-index: 10; }
+
+.card1 .quote {
+  position: absolute;
+  width: 103px;
+  height: 115px;
+  top: 0;
+  right: 17%;
+  z-index: 10; }
+
+.card2 {
+  grid-area: card2;
+  background-color: #48556a;
+  color: white; }
+
+.card3 {
+  grid-area: card3;
+  background-color: white;
+  color: #19212e; }
+
+.card4 {
+  grid-area: card4;
+  background-color: #19212e;
+  color: white; }
+
+.card5 {
+  grid-area: card5;
+  background-color: white;
+  color: #48556a; }
+
+.card3 p,
+.card5 p {
+  color: #48556a; }
+
+@media (max-width: 768px) {
+  .wrapper .testimonials {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
